@@ -1,22 +1,16 @@
     <tr>
-      <td class="h4" style="vertical-align:top">
-        <div class="s">
-{PieChartHTML}
-        </div>
-      </td>
-      <td class="h4f" style="vertical-align:top">
-        <canvas id="piechart" width="400" height="400"></canvas>
+      <td class="ng2" colspan="2">
+        <center><div style="max-width:calc(100vw * .76)"><canvas id="doughnut"></canvas></div></center>
         <script type="text/javascript" src="{ChartJSPath}"></script>
         <script type="text/javascript">
-        Chart.defaults.global.defaultFontColor = '#000';
-        new Chart(document.getElementById("piechart"), {
-          type: 'pie',
+        new Chart(document.getElementById("doughnut"), {
+          type: 'doughnut',
           data: {
-            labels: {PieChartLabels},
+            labels: {DoughnutLabels},
             datasets: [{
               label: "{label_fmgr_disk_usage} ({VaultPath})",
-              backgroundColor: {PieChartColours},
-              data: {PieChartValues},
+              backgroundColor: {DoughnutColours},
+              data: {DoughnutValues},
               borderWidth: 0
             }]
           },
@@ -24,13 +18,12 @@
             title: {
               display: true,
               text: '{label_fmgr_disk_usage} ({VaultPath})'
-            },
-            legend: {
-              display: false
-            },
-            segmentShowStroke: false
+            }
           }
         });
         </script>
+        <div class="s">
+{DoughnutHTML}
+        </div>
       </td>
     </tr>
