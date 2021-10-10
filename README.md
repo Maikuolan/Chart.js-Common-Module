@@ -1,7 +1,7 @@
 ### Chart.js common module for CIDRAM and phpMussel.
 
 - `chart.min.js` is taken directly from [chartjs/Chart.js](https://github.com/chartjs/Chart.js), unmodified.
-- `_chartjs.html` is written/used for CIDRAM/phpMussel to be able to leverage Chart.js for generating the pie charts available at the front-end file manager.
+- `_chartjs.html` is written/used for CIDRAM/phpMussel to be able to leverage Chart.js for generating the doughnut charts available at the front-end file manager.
 - The Chart.js version included in this repository: "v3.5.1".
 
 #### Legal/Licensing:
