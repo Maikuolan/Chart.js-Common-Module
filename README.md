@@ -2,7 +2,7 @@
 
 - `chart.min.js` is taken directly from [chartjs/Chart.js](https://github.com/chartjs/Chart.js), unmodified.
 - `_chartjs.html` is written/used for CIDRAM/phpMussel to be able to leverage Chart.js for generating the doughnut charts available at the front-end file manager.
-- The Chart.js version included in this repository: "v3.7.0".
+- The Chart.js version included in this repository: "v3.7.1".
 
 #### Legal/Licensing:
 - [Chart.js](https://github.com/chartjs/Chart.js) (and thus, the contents of [this repository](https://github.com/Maikuolan/Chart.js-Common-Module)) is available under the [MIT License](https://opensource.org/licenses/MIT).
